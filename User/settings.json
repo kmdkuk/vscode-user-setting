@@ -1,0 +1,26 @@
+{
+    "latex-workshop.latex.toolchain": [{
+        "command": "ptex2pdf",
+        "args": [
+            "-l",
+            "-ot",
+            "-kanji=utf8 -synctex=1",
+            "%DOC%"
+        ]
+    }],
+
+    "latex-workshop.chktex.enabled": true,
+    "python.linting.enabledWithoutWorkspace": false,
+    "workbench.iconTheme": "file-icons",
+    "workbench.startupEditor": "welcomePage",
+    "editor.rulers": [80],
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Ricty Diminished",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "files.insertFinalNewline": true,
+    "ruby.lint": { "rubocop": true },
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": 0    
+}
