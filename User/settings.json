@@ -1,26 +1,46 @@
 {
-    "latex-workshop.latex.toolchain": [{
-        "command": "ptex2pdf",
-        "args": [
-            "-l",
-            "-ot",
-            "-kanji=utf8 -synctex=1",
-            "%DOC%"
-        ]
-    }],
-
-    "latex-workshop.chktex.enabled": true,
-    "python.linting.enabledWithoutWorkspace": false,
-    "workbench.iconTheme": "file-icons",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk", //タイプセットに使うtoolの名前
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [ //タイプセットに使うtool一覧
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.renderControlCharacters": true,
+    "latex-workshop.chktex.enabled": false,
     "workbench.startupEditor": "welcomePage",
-    "editor.rulers": [80],
+    "editor.rulers": [
+        80
+    ],
     "editor.fontSize": 14,
     "editor.fontFamily": "Ricty Diminished",
     "editor.tabSize": 2,
     "editor.renderWhitespace": "boundary",
     "files.insertFinalNewline": true,
-    "ruby.lint": { "rubocop": true },
+    "ruby.lint": {
+        "rubocop": true
+    },
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 0    
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai Dark Soda",
+    // [markdown] 言語に対して上書きされるエディター設定を構成します。
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
 }
