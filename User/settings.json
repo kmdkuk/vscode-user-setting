@@ -26,14 +26,14 @@
     "editor.fontSize": 14,
     "editor.fontFamily": "Ricty Diminished",
     "editor.tabSize": 2,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "all",
     "files.insertFinalNewline": true,
     "ruby.lint": {
         "rubocop": true
     },
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Monokai Dark Soda",
     // [markdown] 言語に対して上書きされるエディター設定を構成します。
     "[markdown]": {
@@ -42,5 +42,6 @@
     },
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.minimap.renderCharacters": false
 }
