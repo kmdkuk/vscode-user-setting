@@ -5,13 +5,14 @@
     ],
     "editor.tabSize": 2,
     "[csharp]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "ms-vscode.csharp"
     },
     "editor.renderWhitespace": "all",
     "files.insertFinalNewline": true,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Monokai",
     // [markdown] 言語に対して上書きされるエディター設定を構成します。
     "[markdown]": {
@@ -25,7 +26,6 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.activityBar.visible": false,
     "editor.wordWrap": "on",
-    "workbench.iconTheme": "vscode-icons",
     "breadcrumbs.enabled": true,
     "go.goroot": null,
     "go.gopath": null,
@@ -36,7 +36,7 @@
     "files.eol": "\n",
     "files.autoGuessEncoding": true,
     "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.fontFamily": "\"Ricty for Powerline\"",
+    "terminal.integrated.fontFamily": "\"Source Code Pro for Powerline\"",
     "terminal.external.osxExec": "iTerm.app",
     // 設定: LaTeX Workshop
     // LaTeX Workshop ではビルド設定を「Tool」と「Recipe」という2つで考える
@@ -131,4 +131,18 @@
     // .tex ファイルの保存と同時に自動的にビルドを実行する設定があるが、文書が大きくなるに連れてビルドにも
     // 時間がかかってしまい、ビルドプログラムの負荷がエディタに影響するため、無効化しておく。
     "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "git.ignoreMissingGitWarning": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+    ],
+    "search.useIgnoreFiles": false,
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useLanguageServer": true,
+    "solargraph.definitions": true,
+    "solargraph.diagnostics": true,
+    "go.toolsEnvVars": {
+        "GO111MODULE": "on"
+    },
+    "csharpfixformat.style.braces.onSameLine": false
 }
