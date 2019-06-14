@@ -9,6 +9,7 @@
         "editor.defaultFormatter": "ms-vscode.csharp"
     },
     "editor.renderWhitespace": "all",
+    "editor.formatOnSaveTimeout": 5000,
     "files.insertFinalNewline": true,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
@@ -137,12 +138,26 @@
         "--load-plugins=pylint_django"
     ],
     "search.useIgnoreFiles": false,
-    "ruby.intellisense": "rubyLocate",
-    "ruby.useLanguageServer": true,
     "solargraph.definitions": true,
     "solargraph.diagnostics": true,
     "go.toolsEnvVars": {
         "GO111MODULE": "on"
     },
-    "csharpfixformat.style.braces.onSameLine": false
+    "go.installDependenciesWhenBuilding": false,
+    // 以下ruby設定
+    "ruby.lint": {
+        "reek": true,
+        "rubocop": true,
+    },
+    "ruby.intellisense": "rubyLocate",
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.useLanguageServer": true,
+    "ruby.locate": {
+        "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
+        "include": "**/*.rb"
+    },
+    "solargraph.autoformat": true,
+    "solargraph.formatting": true,
+    "ruby.rubocop.configFilePath": "/Users/kmdkuk/.rubocop.yml",
+    "ruby.format": "rubocop"
 }
