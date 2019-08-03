@@ -35,7 +35,6 @@
     "editor.snippetSuggestions": "top",
     "editor.tabCompletion": "on",
     "files.eol": "\n",
-    "files.autoGuessEncoding": true,
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.fontFamily": "\"Source Code Pro for Powerline\"",
     "terminal.external.osxExec": "iTerm.app",
@@ -138,8 +137,6 @@
         "--load-plugins=pylint_django"
     ],
     "search.useIgnoreFiles": false,
-    "solargraph.definitions": true,
-    "solargraph.diagnostics": true,
     "go.toolsEnvVars": {
         "GO111MODULE": "on"
     },
@@ -156,8 +153,17 @@
         "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
         "include": "**/*.rb"
     },
-    "solargraph.autoformat": true,
-    "solargraph.formatting": true,
     "ruby.rubocop.configFilePath": "/Users/kmdkuk/.rubocop.yml",
-    "ruby.format": "rubocop"
+    "ruby.format": "rubocop",
+    "go.formatTool": "goimports",
+    "files.autoGuessEncoding": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "solargraph.externalServer": {
+        "host": "localhost",
+        "port": 8091
+    },
+    "solargraph.transport": "external",
+    "solargraph.logLevel": "debug",
+    "solargraph.diagnostics": true,
+    "solargraph.hover": false
 }
