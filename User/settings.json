@@ -13,7 +13,7 @@
     "files.insertFinalNewline": true,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Monokai",
     // [markdown] 言語に対して上書きされるエディター設定を構成します。
     "[markdown]": {
@@ -168,6 +168,7 @@
     "solargraph.hover": false,
     "workbench.iconTheme": "material-icon-theme",
     "cSpell.userWords": [
+        "BRITE",
         "DBNAME",
         "DICOMO",
         "Furigana",
@@ -275,4 +276,19 @@
         }
     },
     "hediet.vscode-drawio.offline": false,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.debugExternalLibraries": true,
+    "dart.debugSdkLibraries": false,
+    "dart.openDevTools": "flutter",
 }

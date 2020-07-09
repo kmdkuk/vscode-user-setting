@@ -47,3 +47,5 @@ Temporary Items
 # =========================
 workspaceStorage/
 *.backup
+
+globalStorage
